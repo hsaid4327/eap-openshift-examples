@@ -43,5 +43,13 @@ oc scale --replicas=0 deployment/hsaid-eap-jdk8
 oc set env --from=secret/db-secret deployment/hsaid-eap-jdk8
 oc scale --replicas=1 deployment/hsaid-eap-jdk8
 
+
 ```
+
+## Create Route for external access
+
+ ```
+ oc expose svc/hsaid-eap-jdk8
+
+ ```
 
