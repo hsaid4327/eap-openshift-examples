@@ -170,7 +170,7 @@
               <version>${version.war.plugin}</version>
               <configuration>
                   <warName>ROOT</warName>
-                  <outputDirectory>openshift/deployments</outputDirectory>
+                  <outputDirectory>${basedir}/openshift/deployments</outputDirectory>
               </configuration>
           </plugin>
       </plugins>
